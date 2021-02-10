@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
 $servername = "localhost";
 $username = "webadmin";
@@ -9,8 +11,8 @@ if ($conn ->connect_error) {
 }
 
 var_dump($_POST);
-$sql = "INSERT INTO Movie(movieID, moviename, dateon, userName, PIN)
-        VALUES ('".$_POST['movieID']."', '".$_POST['moviename']."', '".$_POST['dateon']."', '".$_POST['userName']."', '".$_POST['PIN']."')";
+$sql = "INSERT INTO Movie(movieID, moviename, dateon)
+        VALUES ('".$_POST['movieID']."', '".$_POST['moviename']."', '".$_POST['dateon']."')";
 
 
 if ($conn->query($sql) === TRUE){
@@ -21,3 +23,7 @@ else{
 }
 $conn->close();
 ?>
+<br/>
+<a href="http://localhost/movie_php/web.php"><input type="button" value="ย้อนกลับ"></a>
+</body>
+</html>

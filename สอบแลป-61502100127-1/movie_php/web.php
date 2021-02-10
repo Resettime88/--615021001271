@@ -31,6 +31,7 @@ function myFunction() {
 <ul class="navbar">
 <li><a class="active" href="#">หน้าแรก</a></li>
 <li><a href="insert_form.php">เพิ่มข้อมูลภาพยนต์ที่ฉาย</a></li>
+<li><a href="select.php">ภาพยนตร์ที่ฉาย</a></li>
 </ul>
 </nav>
 <br>
