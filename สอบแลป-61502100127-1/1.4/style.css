@@ -1,0 +1,81 @@
+@font-face{font-family:DD;
+           src:url(font/KRR_AengAei.ttf);}
+body {font-family:DD;
+	  background-color:#F0FFFF;
+      margin:0;
+	  padding:0;}
+header {background:url(image/background/Shinchan.png);
+        background-position:top center;
+		background-size:12%;}
+header > section { padding:1.5em 10% 1.5em 10%;
+                   font-size:1.8em;
+				   font-weight:bold;}
+ul.navbar {background-color:#FFE4E1;
+           list-style-type:none;
+		   margin:0;
+		   padding:0 10% 0 10%;
+		   position:relative;
+		   overflow:auto;}
+ul.navbar li a {color:#000000;
+                text-decoration:none;
+				float:left;
+				padding:0.75em 12px 0.75em 15px;}
+ul.navbar li a.active {background-color:#E6E6FA;}
+ul.navbar li a:hover:not(.active) {background-color:white;
+                                   color:tomato;}
+
+/*---------------Article----------------*/
+article {display:block}
+article > section {padding:3em 10% 3em 10%;
+                   text-align:justify;} /*เนื้อหาข้างหลังตรงกัน*/
+h1 {border-bottom:pink solid 2px;}
+
+
+/*--------กลุ่มคำสั่ง---------*/
+#indent {text-indent:30px;
+         font-size:28px;}/*ย่อหน้า*/
+#right {text-align:right;}
+#imgL {float:left}
+#imgR {float:right;}
+#minH {min-height:400px;}
+#imgC {margin:auto auto;
+       display:block;}
+#ct {text-align:center;}
+
+/*---------------Footer--------------*/
+footer {background-color:black;
+        color:#FFFFFF;
+	    padding:2em 1% 2em 1%;}
+footer > section:first-child {float:right;
+                              width:30%;}
+footer > section > a {text-decoration:none:}
+
+@media screen and (max-width:600;) {
+	ul.navbar {padding:0;}
+	ul.navbar li a { display:block;
+	                 float:none;}
+	article > section {padding:5px;
+	                   text-align:inherit;}
+	#imgR {float:none; width:100%; height:auto;}
+	#imgL {float:none; width:100%; height:auto;}
+	#minH {min-height:200px;}
+	footer > section:first-child {display:none;}
+	
+}
+/*----------หน้าความหมายดอกไม้--------------------------*/
+article > section > ul {
+           list-style-type:none;
+		   margin:0;
+		   padding:0 10% 0 10%;
+		   position:relative;
+		   overflow:auto;
+		   font-size:25px;
+		   }
+article > section > ul li a {color:#000000;
+                text-decoration:none;
+				float:right;
+				padding:1em 30px 1em 30px;}
+article > section > ul li a.active {background-color:#E6E6FA;}
+article > section > ul li a:hover:not(.active) {background-color:white;
+                                   color:tomato;}
+

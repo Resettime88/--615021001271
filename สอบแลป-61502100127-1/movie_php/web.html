@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyWeb</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.mySlides {display:none;}
+@font-face{font-family:DD;
+           src:url(font/KRR_AengAei.ttf);}
+body,h1 {font-family:DD;}
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+<section>My website</section>
+</header>
+
+<nav>
+<ul class="navbar">
+<li><a class="active" href="#">หน้าแรก</a></li>
+<li><a href="meaning.html">ความหมายของดอกไม้</a></li>
+<li><a href="img.html">คลังภาพ</a></li>
+<li><a href="aboutme.html">ติดต่อเรา</a></li>
+<li><a href="provider.html">ผู้จัดทำ</a></li>
+</ul>
+</nav>
+<br>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="image/index/sakura.jpg" style="width:100%">
+  <img class="mySlides" src="image/index/yellowrose.jpg" style="width:100%">  
+  <img class="mySlides" src="image/index/lavender.jpg" style="width:100%">
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<article>
+<section id="minH">
+<h1>-Flower-</h1>
+<img src="image/bg.jpg" style="width:50%" id="imgC">
+<div id ="indent">นอกจากดอกไม้จะมีสีสันสวยงาม ให้ความสดใส มีกลิ่นหอมที่เป็นเอกลักษณ์ และสร้างความสดชื่นให้แก่ผู้พบเห็นแล้ว ดอกไม้แต่ละชนิด แต่ละสี ยังแฝงไปด้วยความหมายอันลึกซึ้งที่คุณอาจไม่เคยทราบมาก่อน
+ การให้ดอกไม้แก้ผู้อื่นก็เช่นกัน ตามประเพณีไทยและความเชื่อตั้งแต่อดีต มีความเชื่อเกี่ยวกับความหมายของดอกไม้แต่ละชนิดแตกต่างกัน ความหมายของดอกไม้อาจรับผลกระทบมาจากเหตุการณ์ หรือวันสำคัญต่างๆทั้งในประเทศไทยและต่างประเทศ
+เราจึงได้รวบรวมความหมายแต่ละชนิดมาให้อ่าน  ในการคัดเลือกดอกไม้ให้เหมาะสมกับโอกาสพิเศษต่างๆของคุณ ไม่ว่าจะส่งดอกไม้สักช่อเพื่อบอกความในใจให้กับคนรัก เติมเต็มรักให้สดใหม่อยู่เสมอ หรือจะส่งต่อความห่วงใย ความปราถนาดีให้คนพิเศษในชีวิตของคุณก็ได้</div>
+</section>
+
+<section id="minH">
+<img src="image/index/sakura2.jpg" style="width:30%" id="imgL">
+<div id ="indent"><span style="color:Pink;">ดอกซากุระ</span> หมายถึง <span style="color:Pink;">“ความรักที่กำลังเบ่งบาน”</span> หรือสื่อถึงว่า คู่เราสร้างความรักจากคนธรรมดาจนกลายเป็นคู่รักกันได้ ต้องใช้เวลาและความจริงใจที่มีต่อกัน และก็กำลังจะเบ่งบานเป็นความรักที่สวยงามอันยิ่งใหญ่ดุจดัง ดอกซากุระ</div>
+</section>
+
+<section id="minH">
+<img src="image/index/yellowrose2.jpg" style="width:30%" id="imgR">
+<div id ="indent"><span style="color:yellow;">ดอกกุหลาบสีเหลือง</span> หมายถึง <span style="color:yellow;">“ความสดใส”</span> กุหลาบสีเหลืองมักถูกใช้แทนความรัก ความปรารถนาดี เช่น ใช้เยี่ยมผู้ป่วย เพื่อช่วยเพิ่มความสดชื่นแจ่มใสให้กับผู้ป่วย และยังบ่งบอกถึง ความอ่อนหวาน สดชื่น กระปี้กระปร่า ฯลฯ</div>
+</section>
+
+<section id="minH">
+<img src="image/index/lavender2.jpg" style="width:30%" id="imgL">
+<div id ="indent"><span style="color:DarkViolet;">ดอกลาเวนเดอร์</span> หมายถึง <span style="color:DarkViolet;">“ความรุ่งโรจน์ที่มาพร้อมกับความสำเร็จ”</span> เวลาที่มอบช่อดอกลาเวนเดอร์ให้ใคร ก็จะหมายถึงการอวยพรให้ประสบความสำเร็จ  </div>
+</section>
+
+<section>
+เครดิต :: https://kanokwan28227.wordpress.com/2012/08/29/hello-world/
+</section>
+</article>
+
+<footer>
+
+<section>
+Social Media ::
+<a href="https://www.facebook.com/" target="_blank"><img src="image/icon/facebook.png" style="width:5%;" ></a>
+<a href="https://www.instagram.com" target="_blank"><img src="image/icon/ig.png" style="width:5%;" ></a>
+</section>
+<section>
+&copy; 2019 Internetworking
+</section>
+
+</footer>
+</body>
+</html>
